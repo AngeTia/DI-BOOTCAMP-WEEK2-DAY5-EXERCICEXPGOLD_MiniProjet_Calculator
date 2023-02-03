@@ -1,17 +1,16 @@
- //fonction qui évalue le chiffre et renvoie la sortie
- function equal() 
+ function evaluateNumber() 
  { 
-     let a = document.getElementById("output").value 
-     let b = eval(a) //  eval() fonction qui permet d'évaluer du code JavaScript représenté sous forme d'une chaîne de caractères.
-     document.getElementById("output").value = b 
+     let getElement = document.getElementById("output").value 
+     let contentElement = eval(getElement)
+     document.getElementById("output").value = contentElement
  } 
- //fonction qui affiche la valeur
- function number(val) 
+
+ function displayContent(contentValue) 
  { 
-     document.getElementById("output").value+=val 
+     document.getElementById("output").value+=contentValue
  } 
-  //fonction qui affiche les operateurs
- function operator(val) 
+
+ function displayOperator(contentValue) 
  { 
-     document.getElementById("output").value+=val
+     document.getElementById("output").value+=contentValue
  } 
